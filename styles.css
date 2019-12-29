@@ -1,0 +1,58 @@
+.content, html, body {
+  height: 98%;
+}
+
+.world {
+  float: left;
+  width: 60%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.world-c {}
+
+.world-fps {
+  padding: 1em;
+}
+
+.config {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+
+  overflow: scroll;
+
+  float: left;
+}
+
+.buttons {
+  padding-bottom: 10px;
+}
+
+table, td, th {
+  border: 1px solid grey;
+}
+
+td, th {
+  padding: 3px;
+}
+
+.next-state {
+  align-content: center;
+  border: 1px solid black;
+}
+
+.dead-ex, .alive-ex {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+
+  border: 1px solid black;
+}
+
+.alive-ex {
+  background-color: black;
+}

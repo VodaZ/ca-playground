@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://cdn.jsdelivr.net/npm/ramda@latest/dist/ramda.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<div class="content">
+  <div class="world">
+    <div class="world-c">
+      <canvas id="c"></canvas>
+    </div>
+    <div class="world-fps">
+      <span id="fps"></span>
+    </div>
+  </div>
+  <div class="config">
+    <div>
+      <h1>Dimensions</h1>
+      <table>
+        <tr>
+          <td>x</td>
+          <td><input id="width" name="width" type="number" value="100"/></td>
+        </tr>
+        <tr>
+          <td>y</td>
+          <td><input id="height" name="height" type="number" value="100"/></td>
+        </tr>
+        <tr>
+          <td>Max td</td>
+          <td><input id="time-step" name="time-step" type="number" value="500"/></td>
+        </tr>
+        <tr>
+          <td>Pixel size</td>
+          <td><input id="pixel-size" name="time-step" type="number" value="3"/></td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h1>Rules</h1>
+      <div class="buttons">
+        <button onclick="setRandomRule()">Generate random</button>
+        <button onclick="setConwaysRule()">Convay's RULE</button>
+      </div>
+      <table id="rules-table"></table>
+    </div>
+    <div>
+      <h1>Starting cells</h1>
+      <div class="buttons">
+        <button onclick="createRandomCells()">Generate random</button>
+      </div>
+      <textarea id="start-points" rows="10"></textarea>
+    </div>
+
+    <div>
+      <h1>Controls</h1>
+      <div class="buttons">
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+
+</html>
